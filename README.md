@@ -10,10 +10,10 @@ Legacy | The Historical and Environmental Group of Nigeria, in de persoon van Fe
 
 ## Resources
 
-Project board
-Styleguide
-Content
-API
+Project board  
+Styleguide  
+Content  
+API  
 
 ## Licentie
 
