@@ -13,11 +13,13 @@ Legacy | The Historical and Environmental Group of Nigeria, in de persoon van Fe
 [Project board](https://github.com/orgs/fdnd-agency/projects/2)
 
 ### Prototypes
-CMDA Minor Web [Meesterproef opdracht](https://github.com/cmda-minor-web-cases/ilojo-bar)  
-[Jeany & Jorn](https://github.com/jornveltrop/ilojo-bar)    
-[Daan & Juul](https://github.com/DaanKetelaars/ilojo-bar/wiki)    
-[Julian & Pepijn](https://github.com/juliandecloe/ilojo-bar)  
-[Sophie & Gwen](https://github.com/Sophievanderburg/ilojo-bar)  
+CMDA Minor Web  
+[Meesterproef opdracht](https://github.com/cmda-minor-web-cases/ilojo-bar) 
+
+* [Prototype Jeany & Jorn](https://github.com/jornveltrop/ilojo-bar)    
+* [Prototype Daan & Juul](https://github.com/DaanKetelaars/ilojo-bar/wiki)    
+* [Prototype Julian & Pepijn](https://github.com/juliandecloe/ilojo-bar)  
+* [Prototype Sophie & Gwen](https://github.com/Sophievanderburg/ilojo-bar)  
 
 
 ## Licentie
