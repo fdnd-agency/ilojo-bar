@@ -11,9 +11,13 @@ Legacy | The Historical and Environmental Group of Nigeria, in de persoon van Fe
 ## Resources
 
 Project board  
-Styleguide  
-Content  
-API  
+
+### Prototypes  
+[Jeany & Jorn](https://github.com/jornveltrop/ilojo-bar)    
+[Daan & Juul](https://github.com/DaanKetelaars/ilojo-bar/wiki)    
+[Julian & Pepijn](https://github.com/juliandecloe/ilojo-bar)  
+[Sophie & Gwen](https://github.com/Sophievanderburg/ilojo-bar)  
+
 
 ## Licentie
 
