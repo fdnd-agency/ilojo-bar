@@ -12,7 +12,6 @@ Legacy | The Historical and Environmental Group of Nigeria, in de persoon van Fe
 
 [Project board](https://github.com/orgs/fdnd-agency/projects/2)
 
-### Prototypes
 [CMDA Minor Web Meesterproef opdracht](https://github.com/cmda-minor-web-cases/ilojo-bar) 
 * [Prototype Jeany & Jorn](https://github.com/jornveltrop/ilojo-bar)    
 * [Prototype Daan & Juul](https://github.com/DaanKetelaars/ilojo-bar/wiki)    
