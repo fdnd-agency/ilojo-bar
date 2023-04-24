@@ -68,10 +68,10 @@
         <section class="mb-5">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-8">
-              <p>
+              <p style= "margin-top:1em">
                 Ilojo Bar of Casa do Fernandez was a landmark national monument in
                 Lagos, Nigeria, which was illegally demolished in 2016. Ilojo Bar was designed and built by Africans who returned from slavery in Brazil in the nineteenth century. Legacy would like an English-language website that becomes a
-                 kind of virtual monument to this remarkable building and the many stories surrounding it.
+                kind of virtual monument to this remarkable building and the many stories surrounding it.
               </p>
             </div>
           </div>
@@ -115,3 +115,11 @@
     <!-- Footer -->
   </div>
   <!-- End of .container -->
+
+  <style>
+    
+.my-5 {
+    margin-top: 0rem!important;
+    margin-bottom: 0rem!important;
+}
+  </style>
