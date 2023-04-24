@@ -21,7 +21,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="/about" class="text-white">About us</a>
+                <a href="/about" class="text-white">Home</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -29,7 +29,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="text-white">Products</a>
+                <a href="#!" class="text-white">Stories</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -37,7 +37,7 @@
             <!-- Grid column -->
             <div class="col-md-2">
               <h6 class="text-uppercase font-weight-bold">
-                <a href="#!" class="text-white">Awards</a>
+                <a href="#!" class="text-white">About us</a>
               </h6>
             </div>
             <!-- Grid column -->

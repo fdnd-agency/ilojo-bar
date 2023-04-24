@@ -1,11 +1,12 @@
 <script>
 	import './styles.css';
 	import Footer from '$lib/components/Footer.svelte';
-	// import About from '../routes/about/+page.svelte'
+	import Home from '../lib/components/Header.svelte'
+	import Header from '../lib/components/Header.svelte';
 </script>
 
 <div class="app">
-<!-- <About/> -->
+	<Header/>
 	<main>
 		<slot />
 	</main>
