@@ -1,6 +1,8 @@
 <script lang="ts">
 	import HomeHeader from './HomeHeader.svelte';
 	import Plate from './Plate.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import BootstrapHeader from './BootstrapHeader.svelte';
 	import { gsap } from 'gsap';
 	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 	import { onMount } from 'svelte';
@@ -24,7 +26,8 @@
 			.fromTo('#overlay', { opacity: 1, scale: 1 }, { opacity: 0, scale: 1.05 }, '<25%');
 	});
 </script>
-
+<!-- <Header/> -->
+<!-- <BootstrapHeader /> -->
 <HomeHeader />
 <main>
 	<section class="ilojo-bar-section">
@@ -51,7 +54,7 @@
 		overflow: hidden;
 	}
 	section {
-		background-image: url('/assets/images/bg-red.webp');
+		background-image: url('/assets/images/background.webp');
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;

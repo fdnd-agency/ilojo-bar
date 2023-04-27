@@ -25,6 +25,8 @@
 	</button>
 </header>
 
+
+
 <style>
 	.header {
 		display: flex;
@@ -36,6 +38,7 @@
 		position: fixed;
 		z-index: 99;
 		width: 100%;
+		background-color: red;
 	}
 
 	.header__nav {
