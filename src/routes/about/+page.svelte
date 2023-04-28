@@ -8,10 +8,12 @@
     <section>
         {#each data.stories as story}
            <h1> {story.title}</h1>
-           <p>storyImage={story.thumbnail.url}</p>
-               
-                <!-- storyImage={story.thumbnail.url}
+           <!-- <p>{story.thumbnail.url}</p> -->
+           <!-- <p>{story.thumbnail.url}</p> -->
+<!--                
+                storyImage={story.thumbnail.url}
                 storyLink="/stories/{story.id}" -->
+
             
         {/each}
     </section>

@@ -12,6 +12,7 @@
 		transform: translate(-50%);
 		text-align: center;
 		max-width: 30rem;
+		color: white;
 	}
 
 	h2 {

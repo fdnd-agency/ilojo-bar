@@ -6,6 +6,7 @@
 	import { gsap } from 'gsap';
 	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 	import { onMount } from 'svelte';
+	import Story from './Story.svelte';
 
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
@@ -33,18 +34,25 @@
 	<section class="ilojo-bar-section">
 		<div class="scroll_cont">
 			<img src="/assets/images/ilojo_bar_bw_2.png" alt="Colored Ilojo bar" />
+
 			<img
 				id="background"
 				src="/assets/images/ilojo_bar_bw_1.jpg"
 				alt="Ilojo bar old with environment"
 			/>
 			<img id="color_building" src="/assets/images/ilojo_bar_bw_2.png" alt="Colored Ilojo bar" />
+			<figure class="windoIcons"><Story/></figure>
+
+			
+
 			<img
 				id="overlay"
 				src="/assets/images/ilojo_bar_bw_3.png"
 				alt="Ilojo bar old with environment"
 			/>
+
 		</div>
+
 	</section>
 </main>
 
@@ -86,6 +94,9 @@
 	#overlay,
 	#color_building {
 		opacity: 0;
+	}
+	.windoIcons{
+		
 	}
 
 	@media(max-width:55rem) {
