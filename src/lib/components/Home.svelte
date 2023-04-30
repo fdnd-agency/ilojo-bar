@@ -1,8 +1,5 @@
 <script lang="ts">
 	import HomeHeader from './HomeHeader.svelte';
-	import Plate from './Plate.svelte';
-	import Header from '$lib/components/Header.svelte';
-	import BootstrapHeader from './BootstrapHeader.svelte';
 	import { gsap } from 'gsap';
 	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 	import { onMount } from 'svelte';
@@ -27,8 +24,6 @@
 			.fromTo('#overlay', { opacity: 1, scale: 1 }, { opacity: 0, scale: 1.05 }, '<25%');
 	});
 </script>
-<!-- <Header/> -->
-<!-- <BootstrapHeader /> -->
 <HomeHeader />
 <main>
 	<section class="ilojo-bar-section">
@@ -42,8 +37,6 @@
 			/>
 			<img id="color_building" src="/assets/images/ilojo_bar_bw_2.png" alt="Colored Ilojo bar" />
 			<figure class="windoIcons"><Story/></figure>
-
-			
 
 			<img
 				id="overlay"
@@ -95,9 +88,9 @@
 	#color_building {
 		opacity: 0;
 	}
-	.windoIcons{
+	/* .windoIcons{
 		
-	}
+	} */
 
 	@media(max-width:55rem) {
 		section img {

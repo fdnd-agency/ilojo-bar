@@ -1,8 +1,8 @@
 <script>
 	import './styles.css';
 	import Footer from '$lib/components/Footer.svelte';
-	// import Header from '../lib/components/Header.svelte';
 	import BootstrapHeader from '$lib/components/BootstrapHeader.svelte';
+
 </script>
 
 <div class="app">

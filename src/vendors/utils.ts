@@ -7,7 +7,7 @@ export async function client({
 	variables?: object;
 	fetch?: any;
 }) {
-	const response = await fetch(import.meta.env.VITE_HYPGRAPH_ENDPOINT, {
+	const response = await fetch(`https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl8tvaoh24vsd01uq8a5x5q2q/master`, {
 		method: 'POST',
 		body: JSON.stringify({ query, variables })
 	});
