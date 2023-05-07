@@ -1,10 +1,9 @@
-<script>
+<!-- <script>
 
    
-</script>
+</script> -->
 
  <div class="container">
-    <!-- <img src="/imges/goldplate.png"alt="goldplate2"  /> -->
     <a href="/" class="centered">Discover</a>
 </div>
 
@@ -31,10 +30,10 @@
 		transform: translate(-50%, -60%);
 	}
 
-    img {
+    /* img {
 		height: 4rem;	
 		
-	}
+	} */
 
     a {
 		text-decoration: none;

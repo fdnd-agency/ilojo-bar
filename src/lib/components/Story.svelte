@@ -9,13 +9,13 @@
 	<a href={storyLink} class="story__link" data-sveltekit-reload>
 		<figure class="story__link__frame">
 			<div class="story__link__frame-content">
-				<!-- <img
+				<img
 					src={storyImage}
 					alt={storyTitle}
 					class="story__link__frame-image"
 					width="200"
 					height="auto"
-				/> -->
+				/>
 			</div>
 			<div class="window-doors-container">
 				<img src="/assets/images/window_L.png" alt="Window Left" class="window-door window_L" />
@@ -25,9 +25,9 @@
 		</figure>
 		<Button/>
 
-		<!-- <div class="story__link__plate">
+		<div class="story__link__plate">
 			<h2 class="story__link__plate-title">{storyTitle}</h2>
-		</div> -->
+		</div>
 	</a>
 </article>
 

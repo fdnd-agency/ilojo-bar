@@ -10,14 +10,13 @@
 </svelte:head>
 
 <div>
-	<Story/>
-
-</div>
-
-<!-- {#each data.stories as story}
+	{#each data.stories as story}
 	<Story
 		storyTitle={story.title}
 		storyImage={story.thumbnail.url}
 		storyLink="/stories/{story.id}"
 	/>
-{/each} -->
+     {/each}
+</div>
+
+

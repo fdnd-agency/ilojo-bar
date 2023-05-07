@@ -1,5 +1,5 @@
 import type { PageServerLoad } from "./$types";
-import { client } from "../../vendors/utils/utils";
+import { client } from "../../vendors/utils";
 
 export const load: PageServerLoad = async () => {
   const query = `
@@ -17,7 +17,7 @@ export const load: PageServerLoad = async () => {
 }`;
   const data = await client({ query, fetch: fetch });
 
-  return { ...data.story };
+  return { story: data.story,};
 
 };
 
