@@ -1,29 +1,31 @@
-import type { LayoutLoad } from './$types';
-import { client } from '../vendors/utils';
-// import { storyId } from '../lib/store/store';
+import type { LayoutLoad } from "./$types";
+import { client } from "../vendors/utils";
+// import { storyId } from "../lib/store/store";
 export const prerender = true;
-export const load: LayoutLoad = async () => {
-    const query = `
-      query Stories {
-          stories {
-              createdAt
-              id
-              publishedAt
-              title
-              updatedAt
-          thumbnail {
-              id
-              url
-          }
+
+export const load: LayoutLoad = async ({ fetch }) => {
+  const query = `
+  query Stories {
+      stories {
+          createdAt
+          id
+          publishedAt
+          title
+          updatedAt
+      thumbnail {
+          id
+          url
       }
-  }`;
-    const data = await client({ query, fetch: fetch });
-  
-    return {
-      stories: data.stories,
-    };
-  };
-  
+  }
+}`;
+const data = await client({ query, fetch: fetch });
+
+return {
+  stories: data.stories,
+};
+};
+
+
 // export const load: LayoutLoad = async ({ fetch }) => {
 // 	const query = `
 //     query Stories {
@@ -42,5 +44,6 @@ export const load: LayoutLoad = async () => {
 // 		stories: data.stories
 // 	};
 // };
+
 
 

@@ -1,6 +1,8 @@
 <script lang="ts">
-	export let storyTitle: string = 'Story Image';
-	export let storyLink: string;
+	// export let storyTitle: string;
+	// export let storyLink: string;
+  export let stories: { title: string, id: number }[] = [];
+
 </script>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -19,23 +21,28 @@
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about">About</a>
-          </li>
-          <li class="nav-item">
-			
-			<a   href={storyLink}  class="nav-link" data-sveltekit-reload>{storyTitle}</a>
-			
-          </li>
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Stories
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="/">Service 1</a></li>
-              <li><a class="dropdown-item" href="/">Service 2</a></li>
-              <li><a class="dropdown-item" href="/">Service 3</a></li>
+              {#each stories as story}
+              <li>
+                <a href={`/stories/${story.id}`} class="dropdown-item" data-sveltekit-reload>
+                  {story.title}
+                </a>
+              </li>
+            {/each}
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+
+          
+          <li class="nav-item">
+            <a class="nav-link" href="about">Help</a>
           </li>
          
           <li class="nav-item">

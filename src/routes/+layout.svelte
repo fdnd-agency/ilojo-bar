@@ -3,19 +3,13 @@
 	import './styles.css';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '../lib/components/Header.svelte';
-	import type { PageData } from './types';
-
+	import type { PageData } from './$types';
     export let data: PageData;
 </script>
 
 <div class="app">
-	{#each data.stories as story}
-	<Header
-		storyTitle={story.title}
-		storyLink="/stories/{story.id}"
-	/>
-     {/each}
 	
+	<Header stories={data.stories} />	
 	<main>
 		<slot />
 	</main>
@@ -32,3 +26,5 @@
 	}
 
 </style>
+
+

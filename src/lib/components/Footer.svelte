@@ -12,7 +12,7 @@
     <footer class="text-center text-white" style="background-color: black">
       <!-- Grid container -->
       <div class="container">
-        <img src="/imges/footerlogo.png" alt="log" width="200" height="atuo">
+        <img src="/imges/footerlogo.png" alt="log" width="200" height="atuo"  >
 
         <!-- Section: Links -->
         <section class="mt-5">
@@ -76,29 +76,6 @@
             </div>
           </div>
         </section>
-        <!-- Section: Text -->
-  
-        <!-- Section: Social -->
-        <!-- <section class="text-center mb-5">
-          <a href="/" class="text-white me-4">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="text-white me-4">
-            <i class="fab fa-github"></i>
-          </a>
-        </section> -->
         <!-- Section: Social -->
       </div>
       <!-- Grid container -->
@@ -117,9 +94,12 @@
   <!-- End of .container -->
 
   <style>
-    
 .my-5 {
     margin-top: 0rem!important;
     margin-bottom: 0rem!important;
+}
+img{
+  margin-bottom: 0;
+  padding: 1em;
 }
   </style>
