@@ -98,8 +98,8 @@
     margin-top: 0rem!important;
     margin-bottom: 0rem!important;
 }
-img{
-  margin-bottom: 0;
-  padding: 1em;
+
+img:not(:last-child) {
+    margin-bottom: 0em;
 }
   </style>
