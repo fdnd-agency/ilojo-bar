@@ -1,53 +1,4 @@
-<!-- <script lang="ts">
-	import 'slick-carousel/slick/slick.css';
-	import 'slick-carousel/slick/slick-theme.css';
-	import 'slick-carousel';
-	import { onMount } from 'svelte';
-  
-	export let stories: { title: string, id: number, thumbnail: { url: string } }[] = [];
-  
-	let options = {
-	  dots: true,
-	  arrows: false,
-	  autoplay: true
-	};
-  
-	onMount(() => {
-	  const carousel = document.querySelector('.carousel') as any;
-	  carousel.slick(options);
-	});
-  </script>
-  
-  <style>
-	.carousel {
-	  margin-top: 5em;
-	  background-color: red;
-	}
-	
-	.slick-slide img {
-	  display: block;
-	  width: 100%;
-	  height: auto;
-	}
-  </style>
-  
-  <ul class="carousel">
-	{#each stories as story}
-	  <li>
-		<a href={`/stories/${story.id}`} class="story__link" data-sveltekit-reload>
-		  <img src={story.thumbnail.url} alt={story.title} />
-		  <div class="story__link__plate">
-			<h2 class="story__link__plate-title">{story.title}</h2>
-			<h2 class="story__link__plate-title">{story.title}</h2>
-			<h2 class="story__link__plate-title">{story.title}</h2>
-		  </div>
-		</a>
-	  </li>
-	{/each}
-  </ul> -->
-  
 
-<!-- 
 <script lang="ts">
 export let stories: { title: string, id: number, thumbnail: { url: string } }[] = [];
 </script>
@@ -188,7 +139,6 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		text-align: center;
 		color: #7A1006;
 	}
-	/* btn */
 	.container_btn {
     position: relative;
     background-image: url(/assets/images/goldplate.png);
@@ -221,4 +171,4 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 			margin: 1rem 0;
 		}
 	}
-</style> -->
+</style>
