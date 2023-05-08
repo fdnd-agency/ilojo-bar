@@ -1,43 +1,18 @@
+
+<!-- without  acrousel -->
 <script lang="ts">
-	export let storyTitle: string = 'Story Image';
-	export let storyImage: string;
-	export let storyLink: string;
+export let stories: { title: string, id: number, thumbnail: { url: string } }[] = [];
 </script>
 
-<article class="story">
-	<a href={storyLink} class="story__link" data-sveltekit-reload>
-		<figure class="story__link__frame">
-			<div class="story__link__frame-content">
-				<img
-					src={storyImage}
-					alt={storyTitle}
-					class="story__link__frame-image"
-					width="200"
-					height="auto"
-				/>
-			</div>
-			<div class="window-doors-container">
-				<img src="/assets/images/window_L.png" alt="Window Left" class="window-door window_L" />
-				<img src="/assets/images/window_R.png" alt="Window Left" class="window-door window_R" />
-			</div>
-		</figure>
-		<div class="container_btn">
-			<a href="/" class="centered_btn">Discover</a>
-		</div>
-		<div class="story__link__plate">
-			<h2 class="story__link__plate-title">{storyTitle}</h2>
-		</div>
-	</a>
-</article>
-
-<!-- <ul class="story">
+<ul class="story">
+	{#each stories as story}
 	<li>
-		<a href={storyLink} class="story__link" data-sveltekit-reload>
+		<a href={`/stories/${story.id}`} class="story__link" data-sveltekit-reload>
 			<figure class="story__link__frame">
 				<div class="story__link__frame-content">
 					<img
-						src={storyImage}
-						alt={storyTitle}
+						src={story.thumbnail.url}
+						alt={story.title}
 						class="story__link__frame-image"
 						width="200"
 						height="auto"
@@ -49,22 +24,30 @@
 				</div>
 			</figure>
 			<div class="container_btn">
-				<a href="/" class="centered_btn">Discover</a>
+				<a href={`/stories/${story.id}`} class="centered_btn">Discover</a>
 			</div>
 			<div class="story__link__plate">
-				<h2 class="story__link__plate-title">{storyTitle}</h2>
+				<h2 class="story__link__plate-title">{story.title}</h2>
 			</div>
 		</a>
 	</li>
-</ul> -->
+  {/each}
+  </ul>
+
+
 
 <style>
+	@import 'node_modules/slick-carousel/slick/slick.css';
+
 	.story{
 		position: relative;
 		display:grid ;
-		grid-template-columns: repeat(2, 1fr);	
+		grid-template-columns: repeat(6, 1fr);	
 		max-width: 20rem;
 		width: 100%;
+	}
+	li{
+		list-style: none;
 	}
 	.story__link {
 		display: flex;
@@ -95,15 +78,6 @@
 		width: 100px;
 		height: 146px;
 	}
-/* 
-	.story {
-		position: relative;
-		max-width: 20rem;
-		width: 100%;
-		margin: var(--top) 0 0;
-		animation-delay: var(--delay);
-		transform-origin: top center;
-	} */
 
 	.story:hover .window_L {
 		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-110deg);
