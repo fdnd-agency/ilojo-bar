@@ -36,7 +36,7 @@
 				alt="Ilojo bar old with environment"
 			/>
 			<img id="color_building" src="/assets/images/ilojo_bar_bw_2.png" alt="Colored Ilojo bar" />
-			<figure class="windoIcons"><Story/></figure>
+			<!-- <figure class="windoIcons"><Story/></figure> -->
 
 			<img
 				id="overlay"

@@ -4,13 +4,13 @@
 </script>
 
 <section class="story">
-	
-	<h1 class="story__title"><span>{data.title}</span></h1>
-	<p class="story__author"><span>Written By: {data.createdBy.name}</span></p>
+	{#each data.story as storys}
+	<h1 class="story__title"><span>{storys.title}</span></h1>
+	<p class="story__author"><span>Written By: {storys.createdBy.name}</span></p>
 	<div class="story__content">
-		{@html data.content.html}
+		{@html storys.content.html}
 	</div>
-
+	{/each}
 </section>
 
 <style>
