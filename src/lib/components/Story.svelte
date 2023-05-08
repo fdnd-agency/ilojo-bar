@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import 'slick-carousel/slick/slick.css';
 	import 'slick-carousel/slick/slick-theme.css';
 	import 'slick-carousel';
@@ -44,7 +44,7 @@
 		</a>
 	  </li>
 	{/each}
-  </ul>
+  </ul> -->
   
 
 <!-- 
