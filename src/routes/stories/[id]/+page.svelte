@@ -147,8 +147,7 @@
 </svelte:head>
 
 <section class="story">
-	<!-- <h1 class="story__title"><span>{data.title}</span></h1> -->
-	<h1 class="story__title">{data.title}</h1>
+	<h1 class="story__title"><span>{data.title}</span></h1>
 	<div class="story__content">
 		{@html data.content.html}
 	</div>
@@ -159,9 +158,16 @@
 	.story {
 		padding: 5em 1em;
 		background-color: #7A1006;
-		/* color: white; */
+		color: white;
 	}
 
+	.story__title {
+		font-size: 2.5rem;
+		font-weight: 600;
+		text-align: center;
+	    line-height: 1.4em;
+		overflow: hidden;
+	}
 
 	.story__content {
 		font-size: 1.5rem;
@@ -170,22 +176,6 @@
 		grid-template-columns: 1fr;
 		justify-items: center;
 		gap: 2rem;
-		/* color: white; */
-	}
-	.story__title{
-		font-family: "Raleway", Sans-serif;
-		font-size: 32px;
-		font-weight: 800;
-		line-height: 1.1em;
-		text-align: center;
-		background: linear-gradient(260deg,  #2231E3 0%,#E3C144  100%);
-		-webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-		}
-		:global(.story__content > p) {
-			background: linear-gradient(260deg, #f0e460 0%, #E1BCEA 100%);
-		-webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
 	}
 	:global(.story__content > img) {
 		width: 100%;
@@ -196,19 +186,16 @@
 	}
 
 	:global(.story__content > p:not(:last-child), img:not(:last-child)) {
-		margin-bottom: 1em;
+		margin-bottom: 4em;
 	}
 
-	@media (min-width: 60em) {
+	@media (min-width: 70em) {
 		.story {
-			padding: 5em 15em;
+			padding: 9em 20em;
 		}
-		.story__title{
-		font-size: 40px;
-		}
-	
+
 		.story__content {
-			grid-template-columns: repeat(1, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 </style>

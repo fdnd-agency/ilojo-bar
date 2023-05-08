@@ -1,4 +1,5 @@
 <script lang="ts">
+
 	import './styles.css';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '../lib/components/Header.svelte';
@@ -7,11 +8,14 @@
 </script>
 
 <div class="app">
+	
 	<Header stories={data.stories} />	
 	<main>
 		<slot />
 	</main>
 	<Footer />
+
+	
 </div>
 
 <style>
@@ -20,6 +24,7 @@
 		flex-direction: column;
 		min-height: 100vh;
 	}
+
 </style>
 
 

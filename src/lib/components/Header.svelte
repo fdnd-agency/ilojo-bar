@@ -1,4 +1,6 @@
 <script lang="ts">
+	// export let storyTitle: string;
+	// export let storyLink: string;
   export let stories: { title: string, id: number }[] = [];
 
 </script>
@@ -40,7 +42,7 @@
 
           
           <li class="nav-item">
-            <a class="nav-link" href="storypage">Help</a>
+            <a class="nav-link" href="about">Help</a>
           </li>
          
           <li class="nav-item">
