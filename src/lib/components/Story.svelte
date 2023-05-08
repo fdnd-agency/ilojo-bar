@@ -1,203 +1,253 @@
-<script lang="ts">
-	export let storyTitle: string = 'Story Image';
-	export let storyImage: string;
-	export let storyLink: string;
-</script>
+<!--&lt;!&ndash; <script lang="ts">-->
+<!--	import 'slick-carousel/slick/slick.css';-->
+<!--	import 'slick-carousel/slick/slick-theme.css';-->
+<!--	import 'slick-carousel';-->
+<!--	import { onMount } from 'svelte';-->
+<!--  -->
+<!--	export let stories: { title: string, id: number, thumbnail: { url: string } }[] = [];-->
+<!--  -->
+<!--	let options = {-->
+<!--	  dots: true,-->
+<!--	  arrows: false,-->
+<!--	  autoplay: true-->
+<!--	};-->
+<!--  -->
+<!--	onMount(() => {-->
+<!--	  const carousel = document.querySelector('.carousel') as any;-->
+<!--	  carousel.slick(options);-->
+<!--	});-->
+<!--  </script>-->
+<!--  -->
+<!--  <style>-->
+<!--	.carousel {-->
+<!--	  margin-top: 5em;-->
+<!--	  background-color: red;-->
+<!--	}-->
+<!--	-->
+<!--	.slick-slide img {-->
+<!--	  display: block;-->
+<!--	  width: 100%;-->
+<!--	  height: auto;-->
+<!--	}-->
+<!--  </style>-->
+<!--  -->
+<!--  <ul class="carousel">-->
+<!--	{#each stories as story}-->
+<!--	  <li>-->
+<!--		<a href={`/stories/${story.id}`} class="story__link" data-sveltekit-reload>-->
+<!--		  <img src={story.thumbnail.url} alt={story.title} />-->
+<!--		  <div class="story__link__plate">-->
+<!--			<h2 class="story__link__plate-title">{story.title}</h2>-->
+<!--			<h2 class="story__link__plate-title">{story.title}</h2>-->
+<!--			<h2 class="story__link__plate-title">{story.title}</h2>-->
+<!--		  </div>-->
+<!--		</a>-->
+<!--	  </li>-->
+<!--	{/each}-->
+<!--  </ul> &ndash;&gt;-->
+<!--  -->
 
-<article class="story">
-	<a href={storyLink} class="story__link" data-sveltekit-reload>
-		<figure class="story__link__frame">
-			<div class="story__link__frame-content">
-				<img
-					src={storyImage}
-					alt={storyTitle}
-					class="story__link__frame-image"
-					width="200"
-					height="auto"
-				/>
-			</div>
-			<div class="window-doors-container">
-				<img src="/assets/images/window_L.png" alt="Window Left" class="window-door window_L" />
-				<img src="/assets/images/window_R.png" alt="Window Left" class="window-door window_R" />
-			</div>
-		</figure>
-		<div class="container_btn">
-			<a href="/" class="centered_btn">Discover</a>
-		</div>
-		<div class="story__link__plate">
-			<h2 class="story__link__plate-title">{storyTitle}</h2>
-		</div>
-	</a>
-</article>
+<!--&lt;!&ndash; -->
+<!--&gt;>>>>>> website-->
+<!--<script lang="ts">-->
+<!--	export let storyTitle: string = 'Story Image';-->
+<!--	export let storyImage: string;-->
+<!--	export let storyLink: string;-->
+<!--</script>-->
 
-<!-- <ul class="story">
-	<li>
-		<a href={storyLink} class="story__link" data-sveltekit-reload>
-			<figure class="story__link__frame">
-				<div class="story__link__frame-content">
-					<img
-						src={storyImage}
-						alt={storyTitle}
-						class="story__link__frame-image"
-						width="200"
-						height="auto"
-					/>
-				</div>
-				<div class="window-doors-container">
-					<img src="/assets/images/window_L.png" alt="Window Left" class="window-door window_L" />
-					<img src="/assets/images/window_R.png" alt="Window Left" class="window-door window_R" />
-				</div>
-			</figure>
-			<div class="container_btn">
-				<a href="/" class="centered_btn">Discover</a>
-			</div>
-			<div class="story__link__plate">
-				<h2 class="story__link__plate-title">{storyTitle}</h2>
-			</div>
-		</a>
-	</li>
-</ul> -->
+<!--<article class="story">-->
+<!--	<a href={storyLink} class="story__link" data-sveltekit-reload>-->
+<!--		<figure class="story__link__frame">-->
+<!--			<div class="story__link__frame-content">-->
+<!--				<img-->
+<!--					src={storyImage}-->
+<!--					alt={storyTitle}-->
+<!--					class="story__link__frame-image"-->
+<!--					width="200"-->
+<!--					height="auto"-->
+<!--				/>-->
+<!--			</div>-->
+<!--			<div class="window-doors-container">-->
+<!--				<img src="/assets/images/window_L.png" alt="Window Left" class="window-door window_L" />-->
+<!--				<img src="/assets/images/window_R.png" alt="Window Left" class="window-door window_R" />-->
+<!--			</div>-->
+<!--		</figure>-->
+<!--		<div class="container_btn">-->
+<!--			<a href="/" class="centered_btn">Discover</a>-->
+<!--		</div>-->
+<!--		<div class="story__link__plate">-->
+<!--			<h2 class="story__link__plate-title">{storyTitle}</h2>-->
+<!--		</div>-->
+<!--	</a>-->
+<!--</article>-->
 
-<style>
-	.story{
-		position: relative;
-		display:grid ;
-		grid-template-columns: repeat(2, 1fr);	
-		max-width: 20rem;
-		width: 100%;
-	}
-	.story__link {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: .5em;
-		text-decoration: none;
-		margin: 1em;
-		width: 200px;
-	}
+<!--&lt;!&ndash; <ul class="story">-->
+<!--	<li>-->
+<!--		<a href={storyLink} class="story__link" data-sveltekit-reload>-->
+<!--			<figure class="story__link__frame">-->
+<!--				<div class="story__link__frame-content">-->
+<!--					<img-->
+<!--						src={storyImage}-->
+<!--						alt={storyTitle}-->
+<!--						class="story__link__frame-image"-->
+<!--						width="200"-->
+<!--						height="auto"-->
+<!--					/>-->
+<!--				</div>-->
+<!--				<div class="window-doors-container">-->
+<!--					<img src="/assets/images/window_L.png" alt="Window Left" class="window-door window_L" />-->
+<!--					<img src="/assets/images/window_R.png" alt="Window Left" class="window-door window_R" />-->
+<!--				</div>-->
+<!--			</figure>-->
+<!--			<div class="container_btn">-->
+<!--				<a href="/" class="centered_btn">Discover</a>-->
+<!--			</div>-->
+<!--			<div class="story__link__plate">-->
+<!--				<h2 class="story__link__plate-title">{storyTitle}</h2>-->
+<!--			</div>-->
+<!--		</a>-->
+<!--	</li>-->
+<!--</ul> &ndash;&gt;-->
 
-	.window-door {
-		position: absolute;
-		top: 0;
-		left: 0;
-		transition: transform 1s ease, filter 1s ease;
-	}
+<!--<style>-->
+<!--	.story{-->
+<!--		position: relative;-->
+<!--		display:grid ;-->
+<!--		grid-template-columns: repeat(2, 1fr);	-->
+<!--		max-width: 20rem;-->
+<!--		width: 100%;-->
+<!--	}-->
+<!--	.story__link {-->
+<!--		display: flex;-->
+<!--		flex-direction: column;-->
+<!--		justify-content: center;-->
+<!--		align-items: center;-->
+<!--		gap: .5em;-->
+<!--		text-decoration: none;-->
+<!--		margin: 1em;-->
+<!--		width: 200px;-->
+<!--	}-->
 
-	.window_L {
-		transform-origin: 16.28%;
-		width: 100px;
-		height: 146px;
-	}
+<!--	.window-door {-->
+<!--		position: absolute;-->
+<!--		top: 0;-->
+<!--		left: 0;-->
+<!--		transition: transform 1s ease, filter 1s ease;-->
+<!--	}-->
 
-	.window_R {
-		transform-origin: 86.04%;
-		width: 100px;
-		height: 146px;
-	}
-/* 
-	.story {
-		position: relative;
-		max-width: 20rem;
-		width: 100%;
-		margin: var(--top) 0 0;
-		animation-delay: var(--delay);
-		transform-origin: top center;
-	} */
+<!--	.window_L {-->
+<!--		transform-origin: 16.28%;-->
+<!--		width: 100px;-->
+<!--		height: 146px;-->
+<!--	}-->
 
-	.story:hover .window_L {
-		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-110deg);
-		-webkit-filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));
-		filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));
-	}
+<!--	.window_R {-->
+<!--		transform-origin: 86.04%;-->
+<!--		width: 100px;-->
+<!--		height: 146px;-->
+<!--	}-->
+<!--/* -->
+<!--	.story {-->
+<!--		position: relative;-->
+<!--		max-width: 20rem;-->
+<!--		width: 100%;-->
+<!--		margin: var(&#45;&#45;top) 0 0;-->
+<!--		animation-delay: var(&#45;&#45;delay);-->
+<!--		transform-origin: top center;-->
+<!--	} */-->
 
-	.story:hover .window_R {
-		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(110deg);
-		-webkit-filter: drop-shadow(-10px 6px 5px rgba(0, 0, 0, 0.2));
-		filter: drop-shadow(-10px 6px 5px rgba(0, 0, 0, 0.2));
-	}
+<!--	.story:hover .window_L {-->
+<!--		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-110deg);-->
+<!--		-webkit-filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));-->
+<!--		filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));-->
+<!--	}-->
 
-	.story__link__frame {
-		background-image: url('/assets/images/window_bg.webp');
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-		margin: 0;
-		aspect-ratio: 354/525;
-		position: relative;
-		overflow: hidden;
-		/* max-width: 25rem; */
-		width: 100px;
-	}
+<!--	.story:hover .window_R {-->
+<!--		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(110deg);-->
+<!--		-webkit-filter: drop-shadow(-10px 6px 5px rgba(0, 0, 0, 0.2));-->
+<!--		filter: drop-shadow(-10px 6px 5px rgba(0, 0, 0, 0.2));-->
+<!--	}-->
 
-	.window-doors-container {
-		width: 71%;
-		height: 51%;
-		position: absolute;
-		top: 77%;
-		left: 36%;
-		transform: translate(-50%, -150%);
-		z-index: 2;
-	}
+<!--	.story__link__frame {-->
+<!--		background-image: url('/assets/images/window_bg.webp');-->
+<!--		background-size: contain;-->
+<!--		background-repeat: no-repeat;-->
+<!--		background-position: center;-->
+<!--		margin: 0;-->
+<!--		aspect-ratio: 354/525;-->
+<!--		position: relative;-->
+<!--		overflow: hidden;-->
+<!--		width: 100px;-->
+<!--	}-->
 
-	.story__link__frame-content {
-		width: 71%;
-		height: 51%;
-		position: absolute;
-		top: 70%;
-		left: 51%;
-		transform: translate(-50%, -50%);
-		z-index: -1;
-	}
+<!--	.window-doors-container {-->
+<!--		width: 71%;-->
+<!--		height: 51%;-->
+<!--		position: absolute;-->
+<!--		top: 77%;-->
+<!--		left: 36%;-->
+<!--		transform: translate(-50%, -150%);-->
+<!--		z-index: 2;-->
+<!--	}-->
 
-	.story__link__frame-image {
-		width: 100%;
-		object-fit: cover;
-		z-index: -1;
-	}
-    .story__link__plate{
-		background-color: #D2B48C;
-		border-radius:.4em;
-		width: 200px;
-	}
-	.story__link__plate-title {
-		font-size: .9rem;
-		padding: .1em;
-		text-decoration: none;
-		text-align: center;
-		color: #7A1006;
-	}
-	/* btn */
-	.container_btn {
-    position: relative;
-    background-image: url(/assets/images/goldplate.png);
-    background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	object-fit: contain;
-	height: 40px;
-	width: 80px;
-	}
-	.centered_btn {
-        font-size: .8em;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -60%);
-	}
-    a {
-		text-decoration: none;
-		color: var(--light);
-		font-size: 1.2rem;
-	}
+<!--	.story__link__frame-content {-->
+<!--		width: 71%;-->
+<!--		height: 51%;-->
+<!--		position: absolute;-->
+<!--		top: 70%;-->
+<!--		left: 51%;-->
+<!--		transform: translate(-50%, -50%);-->
+<!--		z-index: -1;-->
+<!--	}-->
 
-	@media (max-width: 40rem) {
-		.story__link__frame {
-			margin: 0 auto;
-		}
+<!--	.story__link__frame-image {-->
+<!--		width: 100%;-->
+<!--		object-fit: cover;-->
+<!--		z-index: -1;-->
+<!--	}-->
+<!--    .story__link__plate{-->
+<!--		background-color: #D2B48C;-->
+<!--		border-radius:.4em;-->
+<!--		width: 200px;-->
+<!--	}-->
+<!--	.story__link__plate-title {-->
+<!--		font-size: .9rem;-->
+<!--		padding: .1em;-->
+<!--		text-decoration: none;-->
+<!--		text-align: center;-->
+<!--		color: #7A1006;-->
+<!--	}-->
+<!--	/* btn */-->
+<!--	.container_btn {-->
+<!--    position: relative;-->
+<!--    background-image: url(/assets/images/goldplate.png);-->
+<!--    background-repeat: no-repeat;-->
+<!--	background-position: center center;-->
+<!--	background-size: cover;-->
+<!--	object-fit: contain;-->
+<!--	height: 40px;-->
+<!--	width: 80px;-->
+<!--	}-->
+<!--	.centered_btn {-->
+<!--        font-size: .8em;-->
+<!--		position: absolute;-->
+<!--		top: 50%;-->
+<!--		left: 50%;-->
+<!--		transform: translate(-50%, -60%);-->
+<!--	}-->
+<!--    a {-->
+<!--		text-decoration: none;-->
+<!--		color: var(&#45;&#45;light);-->
+<!--		font-size: 1.2rem;-->
+<!--	}-->
 
-		.story {
-			margin: 1rem 0;
-		}
-	}
-</style>
+<!--	@media (max-width: 40rem) {-->
+<!--		.story__link__frame {-->
+<!--			margin: 0 auto;-->
+<!--		}-->
+
+<!--		.story {-->
+<!--			margin: 1rem 0;-->
+<!--		}-->
+<!--	}-->
+<!--</style> &ndash;&gt;-->
