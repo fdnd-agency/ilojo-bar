@@ -1,10 +1,47 @@
 <script lang="ts">
-	export let storyTitle: string = 'Story Image';
-	export let storyImage: string;
-	export let storyLink: string;
+	 export let stories: { title: string, id: number, thumbnail: { url: string } }[] = [];
+	// export let storyTitle: string = 'Story Image';
+	// export let storyImage: string;
+	// export let storyLink: string;
 </script>
 
-<article class="story">
+<ul class="story">
+	{#each stories as story}
+	<li>
+		<a href={`/stories/${story.id}`} class="story__link" data-sveltekit-reload>
+			<figure class="story__link__frame">
+				<div class="story__link__frame-content">
+					<img
+						src={story.thumbnail.url}
+						alt={story.title}
+						class="story__link__frame-image"
+						width="200"
+						height="auto"
+					/>
+				</div>
+				<div class="window-doors-container">
+					<img src="/assets/images/window_L.png" alt="Window Left" class="window-door window_L" />
+					<img src="/assets/images/window_R.png" alt="Window Left" class="window-door window_R" />
+				</div>
+			</figure>
+			<div class="container_btn">
+				<a href={`/stories/${story.id}`} class="centered_btn">Discover</a>
+			</div>
+			<div class="story__link__plate">
+				<h2 class="story__link__plate-title">{story.title}</h2>
+			</div>
+		</a>
+	</li>
+  {/each}
+  </ul>
+
+  <!-- <li>
+	<a href={`/stories/${story.id}`} class="dropdown-item" data-sveltekit-reload>
+	  {story.title}
+	</a>
+  </li> -->
+
+<!-- <article class="story">
 	<a href={storyLink} class="story__link" data-sveltekit-reload>
 		<figure class="story__link__frame">
 			<div class="story__link__frame-content">
@@ -28,35 +65,9 @@
 			<h2 class="story__link__plate-title">{storyTitle}</h2>
 		</div>
 	</a>
-</article>
+</article> -->
 
-<!-- <ul class="story">
-	<li>
-		<a href={storyLink} class="story__link" data-sveltekit-reload>
-			<figure class="story__link__frame">
-				<div class="story__link__frame-content">
-					<img
-						src={storyImage}
-						alt={storyTitle}
-						class="story__link__frame-image"
-						width="200"
-						height="auto"
-					/>
-				</div>
-				<div class="window-doors-container">
-					<img src="/assets/images/window_L.png" alt="Window Left" class="window-door window_L" />
-					<img src="/assets/images/window_R.png" alt="Window Left" class="window-door window_R" />
-				</div>
-			</figure>
-			<div class="container_btn">
-				<a href="/" class="centered_btn">Discover</a>
-			</div>
-			<div class="story__link__plate">
-				<h2 class="story__link__plate-title">{storyTitle}</h2>
-			</div>
-		</a>
-	</li>
-</ul> -->
+
 
 <style>
 	.story{
