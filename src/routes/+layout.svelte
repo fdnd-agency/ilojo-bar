@@ -1,18 +1,17 @@
-<script>
+<script lang="ts">
 	import './styles.css';
 	import Footer from '$lib/components/Footer.svelte';
-	import BootstrapHeader from '$lib/components/BootstrapHeader.svelte';
-
+	import Header from '../lib/components/Header.svelte';
+	import type { PageData } from './$types';
+    export let data: PageData;
 </script>
 
 <div class="app">
-	<BootstrapHeader/>
+	<Header stories={data.stories} />	
 	<main>
 		<slot />
 	</main>
 	<Footer />
-
-	
 </div>
 
 <style>
@@ -21,5 +20,6 @@
 		flex-direction: column;
 		min-height: 100vh;
 	}
-
 </style>
+
+

@@ -1,108 +1,74 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
-	let isActive = false;
+  export let stories: { title: string, id: number }[] = [];
+
 </script>
 
-<header class="header">
-	<a href="/" class="header__link" data-sveltekit-reload>
-		<img
-			src="/assets/images/logo-ilojo-bar.webp"
-			alt="Logo Ilojo Bar"
-			class="header__link__image"
-			width="128"
-			height="45"
-			loading="lazy"
-		/>
-	</a>
-	{#if isActive}
-		<nav in:fly={{ x: 100 }} out:fly={{ opacity: 0, x: 100 }} class="header__nav">
-			<slot />
-		</nav>
-	{/if}
-	<button aria-label="menu" class="header__menu" on:click={() => (isActive = !isActive)}>
-		<span class="header__menu-line" />
-		<span class="header__menu-line" />
-	</button>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><img src="/assets/images/logo-ilojo-bar.webp"
+        alt="Logo Ilojo Bar"
+        class="header__link__image"
+        width="128"
+        height="45"
+        loading="lazy"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Stories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              {#each stories as story}
+              <li>
+                <a href={`/stories/${story.id}`} class="dropdown-item" data-sveltekit-reload>
+                  {story.title}
+                </a>
+              </li>
+            {/each}
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
 
+          
+          <li class="nav-item">
+            <a class="nav-link" href="storypage">Help</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="/">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <style>
+   /* Style the dropdown menu */
+.dropdown-menu {
+  background-color: black; /* Set the background color */
+  border: none; /* Remove the border */
+}
 
+/* Style the dropdown items */
+.dropdown-item {
+  color: #fff; /* Set the text color */
+}
 
-<style>
-	.header {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		margin: 0 auto;
-		padding: 2rem 4rem;
-		position: fixed;
-		z-index: 99;
-		width: 100%;
-		background-color: red;
-	}
+/* Style the dropdown item when it's hovered */
+.dropdown-item:hover {
+  background-color: #555; /* Set the background color */
+}
 
-	.header__nav {
-		position: fixed;
-		top: 0;
-		right: 0;
-		padding: 0 5rem;
-		font-size: 1rem;
-		font-weight: bold;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-end;
-		text-align: right;
-		gap: 1rem;
-		height: 100vh;
-		background-color: var(--color-black);
-		overflow: hidden;
-		z-index: 20;
-	}
-
-	.header__link__image {
-		width: 10rem;
-		max-height: 45px;
-	}
-
-	.header__menu {
-		all: unset;
-		position: relative;
-		cursor: pointer;
-		z-index: 30;
-	}
-
-	.header__menu:after {
-		content: 'MENU';
-	}
-
-	.header__menu-line {
-		display: block;
-		width: 100%;
-		height: 0.2rem;
-		margin-bottom: 5px;
-		position: relative;
-		background-color: var(--color-white);
-		border-radius: 6px;
-		transform-origin: 0 0;
-		transition: 0.3s;
-	}
-
-	.header__menu:hover .header__menu-line:last-child {
-		width: 70%;
-	}
-
-	@media (max-width: 80rem) {
-		.header {
-			padding: 2rem 1rem 0;
-		}
-
-		.header__link__image {
-			width: 8rem;
-		}
-
-		.header__nav {
-			padding: 0 1rem;
-		}
-	}
-</style>
+  </style>
+  
+  
+ 
