@@ -1,4 +1,142 @@
-<script>
+<script lang="ts">
+	import Swiper from 'swiper';
+	import { onMount } from 'svelte';
+
+	
+	let carouselItems = [
+	  { id: 1, title: 'Slide 1'},
+	  { id: 2, title: 'Slide 2'},
+	  { id: 3, title: 'Slide 3'},
+	  { id: 4, title: 'Slide 4'},
+	  { id: 5, title: 'Slide 5'},
+	  { id: 6, title: 'Slide 6'},
+	  { id: 7, title: 'Slide 7'},
+	];
+	
+	let swiper: Swiper;
+  
+	onMount(() => {
+	  swiper = new Swiper('.swiper-container', {
+		slidesPerView: 1,
+		loop: true,
+		pagination: {
+		  el: '.swiper-pagination',
+		},
+	  });
+	});
+  
+// 	beforeDestroy(() => {
+//     swiper.destroy();
+//   });
+  </script>
+<main>
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+		{#each carouselItems as item (item.id)}
+		  <div class="swiper-slide">
+			<h3>{item.title}</h3>
+		  </div>
+		{/each}
+	  </div>
+	  <div class="swiper-pagination"></div>
+	</div>
+  </main>
+  
+ 
+  
+  <style>
+	.swiper-container {
+	  width: 100%;
+	  height: 400px;
+	}
+  
+	.swiper-slide {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  background-color: #f5f5f5;
+	  /* Add any other desired styles for the slides */
+	}
+  </style>
+  <!-- <script lang="ts">
+
+	import { onMount } from 'svelte';
+	import Swiper from 'swiper';
+  
+	let carouselItems = [
+	  { id: 1, title: 'Slide 1'},
+	  { id: 2, title: 'Slide 2'},
+	  { id: 3, title: 'Slide 3'},
+	  { id: 4, title: 'Slide 4'},
+	  { id: 5, title: 'Slide 5'},
+	  { id: 6, title: 'Slide 6'},
+	  { id: 7, title: 'Slide 7'},
+	];
+  
+	let swiper: any; // for accessing the Swiper instance
+  
+	onMount(() => {
+	  swiper = new Swiper('.swiper-container', {
+		// Swiper configuration options
+		// For example, you can customize navigation, pagination, etc.
+	  });
+	});
+  
+	function nextSlide() {
+	  swiper.slideNext();
+	}
+  
+	function previousSlide() {
+	  swiper.slidePrev();
+	}
+  </script>
+ 
+  <main>
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+		{#each carouselItems as item (item.id)}
+		  <div class="swiper-slide">
+			<h3 class="slide-title">{item.title}</h3>		
+		  </div>
+		{/each}
+	  </div>
+	</div>
+  
+	<div class="carousel-navigation">
+	  <button on:click={previousSlide}>&lt;</button>
+	  <button on:click={nextSlide}>&gt;</button>
+	</div>
+  </main>
+  
+  <style>
+	.swiper-container {
+	  /* Set the desired height, width, and other styles */
+	}
+	.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    /* Add any other desired styles for the slides */
+  }
+
+  .slide-title {
+    font-size: 20px;
+    color: #333;
+    /* Add any other desired styles for the slide title */
+  }
+  
+	.carousel-navigation {
+	  /* Customize the navigation styles */
+	}
+  </style> -->
+  
+  
+
+
+
+<!-- slider -->
+<!-- <script>
 	import { onMount } from 'svelte';
   
 	let carouselItems = [
@@ -99,12 +237,12 @@
 	.active {
 	  z-index: 1;
 	}
-  </style>
+  </style> -->
   
 
   
   
-
+<!-- windos -->
 
 <!-- <script lang="ts">
 export let stories: { title: string, id: number, thumbnail: { url: string } }[] = [];
