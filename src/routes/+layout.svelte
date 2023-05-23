@@ -12,7 +12,7 @@
 	<main>
 		<slot />
 	</main>
-	<Slider stories={data.stories}/>
+	<!-- <Slider stories={data.stories}/> -->
 	<Footer />
 </div>
 

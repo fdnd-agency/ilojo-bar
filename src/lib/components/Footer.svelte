@@ -12,7 +12,7 @@
     <footer class="text-center text-white" style="background-color: black">
       <!-- Grid container -->
       <div class="container">
-        <img src="/imges/footerlogo.png" alt="log" width="200" height="atuo"  >
+        <img class="footer-logo" src="/assets/images/logo-ilojo-bar.webp" alt="log" width="128" height="auto"  >
 
         <!-- Section: Links -->
         <section class="mt-5">
@@ -100,6 +100,7 @@
 }
 
 img:not(:last-child) {
+  margin-top: 2em;
     margin-bottom: 0em;
 }
   </style>
