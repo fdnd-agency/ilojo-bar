@@ -2,6 +2,7 @@
 	import './styles.css';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '../lib/components/Header.svelte';
+	import Slider from '$lib/components/Slider.svelte';
 	import type { PageData } from './$types';
     export let data: PageData;
 </script>
@@ -11,6 +12,7 @@
 	<main>
 		<slot />
 	</main>
+	<!-- <Slider stories={data.stories}/> -->
 	<Footer />
 </div>
 

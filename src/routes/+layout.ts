@@ -17,13 +17,12 @@ export const load: LayoutLoad = async ({ fetch }) => {
       }
   }
 }`;
-const data = await client({ query, fetch: fetch });
+  const data = await client({ query, fetch: fetch });
 
-return {
-  stories: data.stories,
+  return {
+    stories: data.stories,
+  };
 };
-};
-
 
 // export const load: LayoutLoad = async ({ fetch }) => {
 // 	const query = `
@@ -43,6 +42,3 @@ return {
 // 		stories: data.stories
 // 	};
 // };
-
-
-
