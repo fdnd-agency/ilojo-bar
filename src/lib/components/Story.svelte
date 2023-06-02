@@ -35,10 +35,10 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 <style>
 	.story{
 		position: relative;
-		display:grid ;
-		grid-template-columns: repeat(6, 1fr);	
-		max-width: 20rem;
-		width: 100%;
+		width: 40em;
+		height: 50em;
+		background-color: blue;
+		margin-top: 5em;
 	}
 	li{
 		list-style: none;
@@ -53,8 +53,18 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		margin: 1em;
 		width: 200px;
 	}
+	/* styling positions wonidos */
 
-	.window-door {
+	ul li:nth-child(1){
+		position: absolute;
+		top: 50%;
+		left: 70%;
+		width: fit-content;
+		background-color: red;
+
+	}
+/* widons styling */
+.window-door {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -66,14 +76,32 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		width: 100px;
 		height: 146px;
 	}
-
 	.window_R {
 		transform-origin: 86.04%;
 		width: 100px;
 		height: 146px;
 	}
+	.window-doors-container {
+		width: 71%;
+		height: 51%;
+		position: absolute;
+		top: 77%;
+		left: 36%;
+		transform: translate(-50%, -150%);
+		z-index: 2;
+	}
+	ul:hover:nth-child(1) li:hover .window_L{
+		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-110deg);
+		-webkit-filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));
+		filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));
+	}
+	ul:hover:nth-child(1) li:hover .window_R{
+		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-110deg);
+		-webkit-filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));
+		filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));
+	}
 
-	.story:hover .window_L {
+	/* .story:hover .window_L {
 		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-110deg);
 		-webkit-filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));
 		filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));
@@ -83,7 +111,7 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(110deg);
 		-webkit-filter: drop-shadow(-10px 6px 5px rgba(0, 0, 0, 0.2));
 		filter: drop-shadow(-10px 6px 5px rgba(0, 0, 0, 0.2));
-	}
+	} */
 
 	.story__link__frame {
 		background-image: url('/assets/images/window_bg.webp');
@@ -97,15 +125,7 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		width: 100px;
 	}
 
-	.window-doors-container {
-		width: 71%;
-		height: 51%;
-		position: absolute;
-		top: 77%;
-		left: 36%;
-		transform: translate(-50%, -150%);
-		z-index: 2;
-	}
+	
 
 	.story__link__frame-content {
 		width: 71%;

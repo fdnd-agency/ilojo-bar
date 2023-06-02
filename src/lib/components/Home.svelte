@@ -29,7 +29,6 @@
 	<section class="ilojo-bar-section">
 		<div class="scroll_cont">
 			<img src="/assets/images/ilojo_bar_bw_2.png" alt="Colored Ilojo bar" />
-
 			<img
 				id="background"
 				src="/assets/images/ilojo_bar_bw_1.jpg"
@@ -37,7 +36,6 @@
 			/>
 			<img id="color_building" src="/assets/images/ilojo_bar_bw_2.png" alt="Colored Ilojo bar" />
 			<!-- <figure class="windoIcons"><Story/></figure> -->
-
 			<img
 				id="overlay"
 				src="/assets/images/ilojo_bar_bw_3.png"
