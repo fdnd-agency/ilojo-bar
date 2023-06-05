@@ -5,6 +5,7 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { onMount } from 'svelte';
 	export let data: PageData;
+	console.log(data)
 
 	onMount(() => {
 		gsap.from('.story__title span, .story__author span', {
@@ -152,6 +153,10 @@
 	<div class="story__content">
 		{@html data.content.html}
 	</div>
+
+	<pre>
+		{ data.content }
+	</pre>
 	
 </section>
 

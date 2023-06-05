@@ -8,10 +8,10 @@
 
 <div class="app">
 	<Header stories={data.stories} />	
-	<main>
+	<main class="content">
 		<slot />
 	</main>
-	<Footer />
+	<Footer class="footer" />
 </div>
 
 <style>
@@ -19,6 +19,13 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+	}
+	.footer {
+		margin-top: auto; /* Push the footer to the bottom */
+	}
+	.content {
+		flex: 1; /* Expand to fill remaining space */
+		margin-top: var(--header-height);
 	}
 </style>
 

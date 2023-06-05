@@ -28,6 +28,7 @@
 		"@fortawesome/react-fontawesome": "^0.2.0",
 		"bootstrap": "^5.2.3",
 		"graphql-request": "^6.0.0",
-		"gsap": "^3.11.5"
+		"gsap": "^3.11.5",
+		"ilojo-bar-components": "^1.1.2"
 	}
 }
