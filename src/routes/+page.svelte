@@ -50,10 +50,6 @@
 
 		</div>
 	</section>
-	<!-- <article id="test">
-		<h3>click on windo to story reading</h3>
-	</article>
-	 -->
 </main>
 
 <style>
