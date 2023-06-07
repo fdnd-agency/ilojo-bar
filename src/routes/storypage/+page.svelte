@@ -4,9 +4,20 @@
     export let data: PageData;
 	const pageTitle = 'Stories';
 </script>
+
 <svelte:head>
 	<title>Ilojo Bar - {pageTitle}</title>
 </svelte:head>
+
 <div>
 <Story stories={data.stories}/>	
 </div>
+<!-- {#each data.stories as story}
+	<Story
+		storyTitle={story.title}
+		storyImage={story.thumbnail.url}
+		storyLink="/stories/{story.id}"
+	/>
+     {/each} -->
+
+
