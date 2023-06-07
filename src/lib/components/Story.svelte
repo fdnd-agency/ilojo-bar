@@ -242,8 +242,6 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		width: 40%;
 		height: 100%;
 		position: unset;
-		/* top: 40%; */
-		/* overflow: unset; */
 		overflow-x: scroll;
 		overflow-y: scroll;
 		margin-top: 6em;
