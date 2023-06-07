@@ -147,7 +147,6 @@
 </svelte:head>
 
 <section class="story">
-	<!-- <h1 class="story__title"><span>{data.title}</span></h1> -->
 	<h1 class="story__title">{data.title}</h1>
 	<div class="story__content">
 		{@html data.content.html}
@@ -159,20 +158,12 @@
 	.story {
 		padding: 5em 1em;
 		background-color: #7A1006;
-		/* color: white; */
-	}
-	.story__content {
-		font-size: 1.5rem;
-		line-height: 2rem;
-		display: grid;
-		grid-template-columns: 1fr;
-		justify-items: center;
-		gap: 2rem;
+		overflow-x: hidden;
 		/* color: white; */
 	}
 	.story__title{
 		font-family: "Austral-Sans_Stamp-Regular";
-		font-size: 23spx;
+		font-size: 23px;
 		font-weight: normal;
 		line-height: 1.1em;
 		text-align: center;
@@ -180,30 +171,68 @@
 		-webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 		}
-		:global(.story__content > p) {
-			font-family: "Austral-Sans_Stamp-Regular";
-			color: white;
+	.story__content {
+		position: relative;
+		font-size: 1.3em;
+		line-height: 1rem;
+		font-family: "Austral-Sans_Stamp-Regular";
+		color: white;
+		margin: 0 5em;
+		background-color: blue;
 	}
-	:global(.story__content > img) {
-		width: 100%;
+	:global(.story__content > img:nth-child(2)) {
+		width: 20em;
 		height: 30em;
+		object-fit: fill;
+		border-radius: 15px;
+	}
+	:global(.story__content > img:nth-child(4)) {
+		position: absolute;
+		top: 29%;
+		left: 35%;
+		width: 65%;
+		height: 15em;
+		object-fit: auto;
+		border-radius: 15px;
+	}
+	:global(.story__content > p:nth-child(1)) {
+		position: absolute;
+		top: 2%;
+		left: 35%;
+		width: 65%;
+		background-color: blue;
+	}
+
+	:global(.story__content > p:nth-child(3)) {
+		margin-top: 5em;
+		height: 18em;
+		padding: 3em;
+		background-color: rgb(11, 229, 14);
+	}
+	/* :global(.story__content > img) {
+		width: 100%;
+rgb(173, 173, 177)		height: 30em;
 		border-radius: .5em;
 		object-fit:contain;
 		object-position: center;
-	}
-
-	/* :global(.story__content > p:not(:last-child), img:not(:last-child)) {
-		margin-bottom: 1em;
 	} */
+	/* .story__content > img:nth-of-type(4){
+		width: 20em;
+		height: 10em;
+		border-radius: .5em;
+} */
+
+/* 
 	:global(.story__content > p:not(:last-child)) {
 		margin-bottom: 1em;
-	}
-	@media (min-width: 60em) {
+	} */
+
+	/* responsive */
+	/* @media (min-width: 60em) {
 		.story {
 			display: grid;
 			place-items: center;
 
-			/* padding: 5em 15em; */
 		}
 		.story__title{
 		font-size: 40px;
@@ -220,5 +249,5 @@
 		object-fit:fill;
 		object-position: center;
 	}
-	}
+	} */
 </style>
