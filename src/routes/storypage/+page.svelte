@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Story from '$lib/components/Story.svelte';
+    import Story from "../../lib/components/Story.svelte";
 	import type { PageData } from './$types';
     export let data: PageData;
 	const pageTitle = 'Stories';
