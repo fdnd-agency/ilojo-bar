@@ -241,9 +241,6 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		gap: 2em;
 		width: 40%;
 		height: 100%;
-		/* object-fit: cover;
-		object-position: center center; */
-		/* margin: 3em; */
 		position: unset;
 		/* top: 40%; */
 		/* overflow: unset; */
@@ -284,9 +281,9 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 </style> 
 
 
-<!-- <div class="container_btn">
-				<a href={`/stories/${story.id}`} class="centered_btn">Discover</a>
-			</div>
-			<div class="story__link__plate">
-				<h2 class="story__link__plate-title">{story.title}</h2>
-			</div> -->
+  <!-- <div class="container_btn">
+	<a href={`/stories/${story.id}`} class="centered_btn">Discover</a>
+</div>
+<div class="story__link__plate">
+	<h2 class="story__link__plate-title">{story.title}</h2>
+</div> -->
