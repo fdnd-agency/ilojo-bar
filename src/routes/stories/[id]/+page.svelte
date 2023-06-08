@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	// import { storyId } from '$lib/stores/store';
 	import gsap from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { onMount } from 'svelte';
@@ -156,98 +155,111 @@
 
 <style>
 	.story {
-		padding: 5em 1em;
+		display: grid;
+		place-items: center;
+		padding-top: 4%;
 		background-color: #7A1006;
 		overflow-x: hidden;
-		/* color: white; */
 	}
 	.story__title{
 		font-family: "Austral-Sans_Stamp-Regular";
-		font-size: 23px;
+		font-size: 40px;
 		font-weight: normal;
 		line-height: 1.1em;
 		text-align: center;
-		background: linear-gradient(260deg,  #2231E3 0%,#E3C144  100%);
-		-webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+		color: rgb(254, 248, 248);
+		padding: 1em;
 		}
 	.story__content {
 		position: relative;
+		font-family: "Austral-Sans_Stamp-Regular";
 		font-size: 1.3em;
 		line-height: 1rem;
-		font-family: "Austral-Sans_Stamp-Regular";
 		color: white;
-		margin: 0 5em;
-		background-color: blue;
+		width: 63em;
+		padding: 1em;
+		background-color: #801637;
 	}
+	/* content global styling */
+	:global(.story__content p) {
+		margin: 0 auto;
+		width: 85%;
+		padding: 1em 0 1em 0;
+	}
+	:global(.story__content img){
+		width: 85%;
+		height: 25em;
+		object-fit: fill;
+		border-radius: 15px;
+		margin-left: 4.5em;
+	}
+	/* content specifiek styling */
 	:global(.story__content > img:nth-child(2)) {
-		width: 20em;
+		width: 16em;
 		height: 30em;
 		object-fit: fill;
 		border-radius: 15px;
 	}
 	:global(.story__content > img:nth-child(4)) {
 		position: absolute;
-		top: 29%;
-		left: 35%;
-		width: 65%;
+		top: 335px;
+		left: 37%;
+		width: 55%;
 		height: 15em;
 		object-fit: auto;
 		border-radius: 15px;
+		margin-left: unset;
+
 	}
 	:global(.story__content > p:nth-child(1)) {
 		position: absolute;
-		top: 2%;
-		left: 35%;
-		width: 65%;
-		background-color: blue;
+		top: 1%;
+		left: 37%;
+		width: 55%;
+		padding: unset;
+		margin: unset;
 	}
-
 	:global(.story__content > p:nth-child(3)) {
-		margin-top: 5em;
-		height: 18em;
-		padding: 3em;
-		background-color: rgb(11, 229, 14);
+		margin-top: 3em;
 	}
-	/* :global(.story__content > img) {
-		width: 100%;
-rgb(173, 173, 177)		height: 30em;
-		border-radius: .5em;
-		object-fit:contain;
-		object-position: center;
-	} */
-	/* .story__content > img:nth-of-type(4){
-		width: 20em;
-		height: 10em;
-		border-radius: .5em;
-} */
-
-/* 
-	:global(.story__content > p:not(:last-child)) {
-		margin-bottom: 1em;
-	} */
-
 	/* responsive */
-	/* @media (min-width: 60em) {
+	@media (max-width: 60em) {
 		.story {
 			display: grid;
 			place-items: center;
-
 		}
 		.story__title{
-		font-size: 40px;
+		font-size: 23px;
+		padding-top: 3em;
 		}
-	
 		.story__content {
 			grid-template-columns: repeat(1, 1fr);
-			width: 70%;
+			width: 95%;
 		}
-		:global(.story__content > img) {
-		width: 90%;
-		height: 70% ;
-		border-radius: .5em;
-		object-fit:fill;
-		object-position: center;
+		:global(.story__content img){
+		margin-left: 7%;
 	}
-	} */
+	/* content specifiek styling */
+	:global(.story__content > img:nth-child(2)) {
+		width: 85%;
+		height: inherit ;
+	}
+	:global(.story__content > img:nth-child(4)) {
+		position: unset;
+		width: 85%;
+		height: inherit;
+		object-fit: fill;
+		border-radius: 15px;
+		margin-left: 7%;
+
+	}
+	:global(.story__content > p:nth-child(1)) {
+		position: unset;
+		width: 85%;
+		margin-left: 7%;
+		margin-bottom: 1em;
+
+	}
+		
+	}
 </style>
