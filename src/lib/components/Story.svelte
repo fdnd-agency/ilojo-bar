@@ -156,6 +156,13 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		left: 27%;
 		width: 72%;
 	}
+	li:nth-child(10) .story__link > .story__link__frame{
+		position: absolute;
+		top: -6%;
+		left: 23%;
+		width: 72%;
+	}
+
 
 	.story__link__frame-content {
 		width: 71%;
@@ -227,6 +234,12 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		position: absolute;
 		top: -3%;
 		left: 20%;
+		width: 72%;
+	}
+	li:nth-child(10) .story__link > .story__link__frame{
+		position: absolute;
+		top: -3%;
+		left: 19%;
 		width: 72%;
 	}
 	}
