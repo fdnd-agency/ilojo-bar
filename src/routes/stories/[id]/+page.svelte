@@ -160,7 +160,7 @@
 		padding-top: 4%;
 		background-color: #7A1006;
 		overflow-x: hidden;
-		padding: 1em;
+		padding: 6em;
 	}
 	.story__title{
 		font-family: "Austral-Sans_Stamp-Regular";
@@ -169,7 +169,7 @@
 		line-height: 1.1em;
 		text-align: center;
 		color: rgb(254, 248, 248);
-		padding: 1em;
+		padding-bottom: 1em;
 		}
 	.story__content {
 		position: relative;
