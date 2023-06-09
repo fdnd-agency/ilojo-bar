@@ -5,7 +5,7 @@
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img src="/assets/images/logo-ilojo-bar.webp"
+        <a class="navbar-brand" href="/"><img src="/assets/images/logo-ilojo-barR.webp"
           alt="Logo Ilojo Bar"
           class="header__link__image"
           width="128"

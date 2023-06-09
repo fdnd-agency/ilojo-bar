@@ -1,18 +1,9 @@
-
-<script>
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//   import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-//   import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-//   import {footerlogo} from '../imges/MicrosoftTeams-image.png'
-
-</script>
-   
-<div class=" my-5">
+   <div class=" my-5">
     <!-- Footer -->
     <footer class="text-center text-white" style="background-color: black">
       <!-- Grid container -->
       <div class="container">
-        <img class="footer-logo" src="/assets/images/logo-ilojo-bar.webp" alt="log" width="128" height="auto"  >
+        <img class="footer-logo" src="/assets/images/logo-ilojo-barR.webp" alt="log" width="128" height="auto"  >
 
         <!-- Section: Links -->
         <section class="mt-5">
