@@ -160,6 +160,7 @@
 		padding-top: 4%;
 		background-color: #7A1006;
 		overflow-x: hidden;
+		padding: 1em;
 	}
 	.story__title{
 		font-family: "Austral-Sans_Stamp-Regular";
