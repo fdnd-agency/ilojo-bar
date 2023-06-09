@@ -197,20 +197,19 @@
 	/* content specifiek styling */
 	:global(.story__content > img:nth-child(2)) {
 		width: 16em;
-		height: 30em;
-		object-fit: fill;
+		height: 25em;
+		object-fit: auto;
 		border-radius: 15px;
 	}
 	:global(.story__content > img:nth-child(4)) {
 		position: absolute;
-		top: 335px;
-		left: 37%;
-		width: 55%;
-		height: 15em;
-		object-fit: auto;
+		top: 263px;
+		left: 40%;
+		width: 50%;
+		height: 13em;
+		object-fit: fill;
 		border-radius: 15px;
 		margin-left: unset;
-
 	}
 	:global(.story__content > p:nth-child(1)) {
 		position: absolute;
@@ -235,7 +234,7 @@
 		}
 		.story__content {
 			grid-template-columns: repeat(1, 1fr);
-			width: 95%;
+			width:118%;
 		}
 		:global(.story__content img){
 		margin-left: 7%;
