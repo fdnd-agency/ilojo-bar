@@ -37,7 +37,7 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		object-position: center center;
 		position: absolute;
 		top: 44%;
-		overflow: hidden;		
+		overflow: hidden;	
 	}
 
 	li{
@@ -101,6 +101,7 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		-webkit-filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));
 		filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));
 	}
+	
 	ul:hover:nth-child(1) li:hover .window_R{
 		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-110deg);
 		-webkit-filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.2));
