@@ -42,10 +42,6 @@
               <a class="nav-link" href="about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="storypage">Help</a>
-            </li>
-           
-            <li class="nav-item">
               <a class="nav-link" href="/">Contact</a>
             </li>
           </ul>
