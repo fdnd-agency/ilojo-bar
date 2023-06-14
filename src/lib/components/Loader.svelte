@@ -18,12 +18,11 @@
 {/if} 
   <style>
     .containar{
-    /* background-color: blue; */
     display: grid;
-	place-items: center;
-	width: 100%;
-	height: 75vh;
-	margin-top: 0;
+    place-items: center;
+    width: 100%;
+    height: 75vh;
+    margin-top: 0;
     backdrop-filter: blur(8px);
     border-radius: 15px;
 
@@ -38,7 +37,7 @@
       box-sizing: border-box;
       animation: rotation 1s linear infinite;  
     }
-  
+    
     .loader::after {
       content: '';
       box-sizing: border-box;
@@ -52,7 +51,6 @@
       border-bottom: 4px solid transparent;
       animation: rotation 0.5s linear infinite reverse;
     }
-  
     @keyframes rotation {
       0% {
         transform: rotate(0deg);
@@ -61,11 +59,6 @@
         transform: rotate(360deg);
       }
     }
-  
-    /* .hidden {
-      display: none;
-    } */
-   
   </style>
   
  
