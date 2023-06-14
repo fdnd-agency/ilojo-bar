@@ -196,17 +196,22 @@
 	}
 	/* content specifiek styling */
 	:global(.story__content > img:nth-child(2)) {
-		width: 16em;
-		height: 25em;
+		width:400px;
+		height: auto;
+		/* width: 16em;
+		height: 25em; */
 		object-fit: auto;
+		object-position: center;
 		border-radius: 15px;
 	}
 	:global(.story__content > img:nth-child(4)) {
 		position: absolute;
 		top: 263px;
 		left: 40%;
-		width: 50%;
-		height: 13em;
+		width: 600px;
+		height: 300px;
+		/* width: 50%;
+		height: 13em; */
 		object-fit: fill;
 		border-radius: 15px;
 		margin-left: unset;
