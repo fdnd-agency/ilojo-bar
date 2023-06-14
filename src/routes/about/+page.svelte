@@ -4,7 +4,7 @@
     let videoId = 'T2ggkfha60g'; // Replace this with the ID of your YouTube video
 </script>
 
-<section class="container">
+<section class="container about-section">
     <div class="wrapper">
         <h1 class="text-center">About Ilojo Bar</h1>
 
@@ -48,6 +48,9 @@
 </section>
 
 <style>
+    .about-section{
+        color: white;
+    }
     .wrapper {
         padding: 5em 0;
     }
