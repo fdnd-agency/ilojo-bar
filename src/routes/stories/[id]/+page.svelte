@@ -196,10 +196,8 @@
 	}
 	/* content specifiek styling */
 	:global(.story__content > img:nth-child(2)) {
-		width:400px;
-		height: auto;
-		/* width: 16em;
-		height: 25em; */
+		width: 16em;
+		height: 25em;
 		object-fit: auto;
 		object-position: center;
 		border-radius: 15px;
@@ -207,11 +205,9 @@
 	:global(.story__content > img:nth-child(4)) {
 		position: absolute;
 		top: 263px;
-		left: 40%;
-		width: 600px;
-		height: 300px;
-		/* width: 50%;
-		height: 13em; */
+		left: 41%;
+		width: 50%;
+		height: 13em;
 		object-fit: fill;
 		border-radius: 15px;
 		margin-left: unset;
@@ -219,8 +215,8 @@
 	:global(.story__content > p:nth-child(1)) {
 		position: absolute;
 		top: 1%;
-		left: 37%;
-		width: 55%;
+		left: 41%;
+		width: 50%;
 		padding: unset;
 		margin: unset;
 	}
