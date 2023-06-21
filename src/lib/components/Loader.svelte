@@ -7,7 +7,7 @@
       // Simulating content loading delay
       setTimeout(() => {
         showLoader = false;
-      }, 2000);
+      }, 1000);
     });
   </script>
 {#if showLoader}
@@ -18,14 +18,14 @@
 {/if} 
   <style>
     .containar{
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 75vh;
-    margin-top: 0;
-    backdrop-filter: blur(8px);
-    border-radius: 15px;
-
+      display: grid;
+      place-items: center;
+      width: 500%;
+      height: 100vh;
+      margin-top: 0;
+      backdrop-filter: blur(8px);
+      border-radius: 15px;
+      overflow: hidden;
     }
     .loader {
       width: 48px;
@@ -35,9 +35,10 @@
       border-top: 4px solid #FFF;
       border-right: 4px solid transparent;
       box-sizing: border-box;
-      animation: rotation 1s linear infinite;  
+      animation: rotation 1s linear infinite;
+      
     }
-    
+  
     .loader::after {
       content: '';
       box-sizing: border-box;
@@ -51,6 +52,7 @@
       border-bottom: 4px solid transparent;
       animation: rotation 0.5s linear infinite reverse;
     }
+  
     @keyframes rotation {
       0% {
         transform: rotate(0deg);
@@ -59,9 +61,10 @@
         transform: rotate(360deg);
       }
     }
+  
+    /* .hidden {
+      display: none;
+    } */
+   
   </style>
-  
- 
-  
-
   

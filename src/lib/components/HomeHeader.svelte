@@ -1,7 +1,6 @@
 <script>
-	import Loader from '$lib/components/Loader.svelte';
+		import Loader from '$lib/components/Loader.svelte';
 </script>
-
 <section>
 	<section class="loader"><Loader/></section>
 	<h2>Welcome to the <br /> Stories of Ilojo Bar</h2>
@@ -70,7 +69,7 @@
 	place-items: center;
 	width: 600%;
 	height: 60vh;
-	margin-top: -9em;
+	margin-top: -70%;
 }
 @media (max-width: 55rem) {
 		h2 {

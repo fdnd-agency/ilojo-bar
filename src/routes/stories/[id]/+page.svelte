@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import gsap from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	// import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { onMount } from 'svelte';
 	export let data: PageData;
 
@@ -199,13 +199,12 @@
 		width: 16em;
 		height: 25em;
 		object-fit: auto;
-		object-position: center;
 		border-radius: 15px;
 	}
 	:global(.story__content > img:nth-child(4)) {
 		position: absolute;
 		top: 263px;
-		left: 41%;
+		left: 40%;
 		width: 50%;
 		height: 13em;
 		object-fit: fill;
@@ -215,8 +214,8 @@
 	:global(.story__content > p:nth-child(1)) {
 		position: absolute;
 		top: 1%;
-		left: 41%;
-		width: 50%;
+		left: 37%;
+		width: 55%;
 		padding: unset;
 		margin: unset;
 	}
