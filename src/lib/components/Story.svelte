@@ -166,7 +166,6 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		transform: translate(-50%, -50%);
 		z-index: -1;
 	}
-
 	.story__link__frame-image {
 		width: 100%;
 		height: 100%;
@@ -174,7 +173,6 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		z-index: -1;
 		overflow: hidden;
 	}
-	
 	a {
 		text-decoration: none;
 		color: var(--light);
@@ -182,7 +180,6 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 	}
 	
 	@media (max-width: 100em) {
-			/* styling positions wonidos  laptop*/
 	.story__link .story__link__frame{
 		position: absolute;
 		top: 4%;
@@ -234,19 +231,10 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 		.story{
 			display: grid;
 		grid-template-columns: repeat(2,1fr);
-		/* display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center; */
 		gap: 2em;
 		width: 40%;
 		height: 100%;
-		/* object-fit: cover;
-		object-position: center center; */
-		/* margin: 3em; */
 		position: unset;
-		/* top: 40%; */
-		/* overflow: unset; */
 		overflow-x: scroll;
 		overflow-y: scroll;
 		margin-top: 6em;
@@ -282,11 +270,3 @@ export let stories: { title: string, id: number, thumbnail: { url: string } }[] 
 	}	
 	}
 </style> 
-
-
-<!-- <div class="container_btn">
-				<a href={`/stories/${story.id}`} class="centered_btn">Discover</a>
-			</div>
-			<div class="story__link__plate">
-				<h2 class="story__link__plate-title">{story.title}</h2>
-			</div> -->

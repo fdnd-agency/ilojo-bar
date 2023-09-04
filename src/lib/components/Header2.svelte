@@ -1,6 +1,5 @@
 <script lang="ts">
     export let stories: { title: string, id: number }[] = [];
-  
   </script>
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
@@ -71,25 +70,23 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.3); /* Adjust the alpha value to control transparency */
-  backdrop-filter: blur(10px); /* Adjust the pixel value as desired */
+  background: rgba(255, 255, 255, 0.3); 
+  backdrop-filter: blur(10px); 
   z-index: -1;
 }
      /* Style the dropdown menu */
   .dropdown-menu {
-    background-color: black; /* Set the background color */
-    border: none; /* Remove the border */
+    background-color: black; 
+    border: none; 
     
   }
   /* Style the dropdown items */
   .dropdown-item {
-    color: #fff; /* Set the text color */
+    color: #fff; 
   }
-  /* Style the dropdown item when it's hovered */
   .dropdown-item:hover {
-    background-color: #555; /* Set the background color */
+    background-color: #555; 
   }
-
     </style>
     
     
