@@ -1,7 +1,6 @@
 <script lang="ts">
     export let stories: { title: string, id: number }[] = [];
   </script>
-  
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="/"><img src="/assets/images/logo-ilojo-bar.webp"
@@ -51,7 +50,6 @@
     <style>
         nav{
             padding: .2em 3em;
-            /* padding: 0 4em 0 4em; */
             font-weight: 600;
             font-size: 1.2em;
         }
@@ -59,7 +57,6 @@
             color: #f8f9fa;           
             &:hover {
                 color: #00090b;  
-                /* color: #00C6FF;   */
             }
             
         }
