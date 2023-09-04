@@ -4,7 +4,6 @@
     let showLoader = true;
   
     onMount(() => {
-      // Simulating content loading delay
       setTimeout(() => {
         showLoader = false;
       }, 2000);
