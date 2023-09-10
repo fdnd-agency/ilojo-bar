@@ -150,7 +150,6 @@
 	<div class="story__content">
 		{@html data.content.html}
 	</div>
-	
 </section>
 
 <style>
@@ -163,7 +162,6 @@
 		padding: 6em;
 	}
 	.story__title{
-		font-family: "Austral-Sans_Stamp-Regular";
 		font-size: 40px;
 		font-weight: normal;
 		line-height: 1.1em;
@@ -173,7 +171,6 @@
 		}
 	.story__content {
 		position: relative;
-		font-family: "Austral-Sans_Stamp-Regular";
 		font-size: 1.3em;
 		line-height: 1rem;
 		color: white;

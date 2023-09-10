@@ -1,15 +1,14 @@
 <script lang="ts">
     export let stories: { title: string, id: number }[] = [];
-    import 'bootstrap/dist/css/bootstrap.min.css';
   </script>
   
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img src="/assets/images/logo-ilojo-barR.webp"
+        <a class="navbar-brand" href="/">
+          <img src="/assets/images/logo-ilojo-bar.webp"
           alt="Logo Ilojo Bar"
           class="header__link__image"
           width="128"
-          height="45"
           loading="lazy"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
