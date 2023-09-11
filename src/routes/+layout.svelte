@@ -6,13 +6,12 @@
 
     export let data: PageData;
 
-    import Loader from '$lib/components/Loader.svelte';
 </script>
 
 <div class="app">
-    <Loader/>
 
     <Header2 stories={data.stories}/>
+
     <main>
         <slot/>
     </main>
